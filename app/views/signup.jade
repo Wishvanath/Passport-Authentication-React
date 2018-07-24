@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h2 Sign up Form 
+    newline
+    newline
+         form(action = "/signup" method = "POST")
+         input(name = "id" type = "text" required placeholder = "User ID")
+         input(name = "password" type = "password" required placeholder = "Password")
+         button(type = "Submit") Sign me up!
